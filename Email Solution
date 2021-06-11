@@ -1,0 +1,20 @@
+<script>
+let params = (new URL(document.location)).searchParams;
+params.forEach(function(x, y) {
+  if (document.getElementById(y)) {  document.getElementById(y).value = x} 
+});
+</script>
+
+
+
+Email Only
+inf_field_Email=~Contact.Email~
+
+First Name and Email
+inf_field_FirstName=~Contact.FirstName~&inf_field_Email=~Contact.Email~
+
+You can add more by seperating by &
+
+inf_field_Phone1=~Contact.Phone1~
+inf_field_Email=~Contact.Email~
+inf_field_LastName=~Contact.LastName~
